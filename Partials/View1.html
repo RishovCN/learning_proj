@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>View1</h2>
+    Name: Rishov
+    <br />
+    <input type="text" ng-model='filter.name'>
+    <br />
+    {{customers[0].name}}
+    Rishov
+    <ul>
+        <li ng-repeat='cust in customers'>{{cust.name}}</li>
+            {{customers}}
+    </ul>
+    Customer Name:
+    <br />
+    <!-- new property added to $scope -->
+    <input type="text" ng-model='newCustomer.name'>
+    <br />
+    Customer City:
+    <br />
+    <input type="text" ng-model='newCustomer.city'>
+    <br />
+    <button ng-click="addCustomer()">Add Customer</button>
+    <a href="/View2">View2</a>
+</div>
